@@ -3,5 +3,5 @@
 ---
 
 @import
-  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
-  "minima/initialize";
+  "jekyll-theme-squire/skins/{{ site.jekyll-theme-squire.skin | default: 'classic' }}",
+  "jekyll-theme-squire/initialize";

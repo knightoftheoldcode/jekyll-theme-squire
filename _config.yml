@@ -9,9 +9,9 @@ description: > # this means to ignore newlines until "show_excerpts:"
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
-# Minima date format
+# jekyll-theme-squire date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
-minima:
+jekyll-theme-squire:
   date_format: "%b %-d, %Y"
 
   # generate social links in footer

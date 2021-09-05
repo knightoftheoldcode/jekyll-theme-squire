@@ -1,9 +1,20 @@
-FROM ruby:2.6
-RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs
-RUN mkdir /appname
-WORKDIR /appname
-COPY Gemfile /appname/Gemfile
-COPY Gemfile.lock /appname/Gemfile.lock
-COPY jekyll-theme-squire.gemspec /appname/jekyll-theme-squire.gemspec
+FROM ruby:3.0
+
+LABEL maintainer="curtis.spendlove@knightoftheoldcode.com"
+
+RUN apt-get update -yqq && \
+    apt-get install -yqq --no-install-recommends \
+    build-essential \
+    libpq-dev \
+    nodejs
+
+RUN mkdir /usr/src/theme
+
+COPY Gemfile* /usr/src/theme
+COPY jekyll-theme-squire.gemspec /usr/src/theme/jekyll-theme-squire.gemspec
+WORKDIR /usr/src/theme
 RUN bundle install
-COPY . /appname
+
+COPY . /usr/src/theme/
+
+CMD [ "jekyll", "serve", "--host=0.0.0.0" ]

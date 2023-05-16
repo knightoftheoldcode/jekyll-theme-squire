@@ -4,9 +4,9 @@ Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-squire"
   spec.version       = "4.3.2"
   spec.authors       = ["Curtis Spendlove"]
-  spec.email         = ["curtis.spendlove@knightoftheoldcode.com"]
+  spec.email         = ["curtis.spendlove@knightoftheoldcode.dev"]
 
-  spec.summary       = "This is an open-source jekyll theme. It is powering knightoftheoldcode.com."
+  spec.summary       = "This is an open-source jekyll theme. It is powering knightoftheoldcode.dev."
   spec.homepage      = "https://github.com/knightoftheoldcode/jekyll-theme-squire"
   spec.license       = "MIT"
 

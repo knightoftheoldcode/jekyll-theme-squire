@@ -18,6 +18,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
+      - name: Bundle Lock Platform
+        run: bundle lock --add-platform x86_64-linux
       - name: Set Up Ruby 3.2
         uses: ruby/setup-ruby@v1
         with:

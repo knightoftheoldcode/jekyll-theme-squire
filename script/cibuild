@@ -12,4 +12,4 @@ else
   exit 1
 fi
 
-gem build jekyl-theme-squire.gemspec
+gem build jekyll-theme-squire.gemspec

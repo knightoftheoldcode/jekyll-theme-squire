@@ -1,6 +1,6 @@
 FROM ruby:3.0
 
-LABEL maintainer="curtis.spendlove@knightoftheoldcode.com"
+LABEL maintainer="curtis.spendlove@knightoftheoldcode.dev"
 
 RUN apt-get update -yqq && \
     apt-get install -yqq --no-install-recommends \

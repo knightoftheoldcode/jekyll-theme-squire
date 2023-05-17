@@ -22,6 +22,8 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.2
-          bundler-cache: true
+          bundler-cache: false
+      - name: Bundle Install
+        run: bundle install  
       - name: Run tests
         run: script/cibuild
